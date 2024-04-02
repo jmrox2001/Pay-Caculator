@@ -2,12 +2,12 @@
 try:
     sh = int(input("Enter Hours: "))
 except:
-    sh = int(input("No Letters Dumbass! Enter Hours: "))
+    sh = int(input("No Letters Dummy! Enter Hours: "))
 # Prompt the user to enter rate
 try:
     sr = float(input("Enter Rate: "))
 except:
-    sr = float(input("No Letters Dumbass! Enter Rate: "))
+    sr = float(input("No Letters Dummy! Enter Rate: "))
 
 # Calculate overtime
 if sh > 40:
@@ -28,6 +28,11 @@ print('Total pay before tax:', xp)
 # Calculate the pay after tax (20% deduction)
 st = xp * 0.8
 print('Pay after tax:', st)
+
+# Find and display the user's Owed Tax Amount
+tax = xp - st
+
+print('Taxes Owed:', tax)
 
 # Keep the window open by prompting for additional input
 input("Press Enter to exit...")
